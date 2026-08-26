@@ -1,0 +1,2 @@
+import { PortfolioPage } from "@/features/portfolio/portfolio-page";
+export default function Home() { return <PortfolioPage />; }

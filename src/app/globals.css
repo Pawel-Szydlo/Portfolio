@@ -1,0 +1,11 @@
+@import "tailwindcss";
+@theme inline { --color-ink: #14201e; --color-muted: #65716d; --color-line: #dce4df; --color-soft: #eef3ef; --color-paper: #f8faf7; --color-accent: #d5f15c; --font-sans: Arial, sans-serif; --font-mono: monospace; }
+:root { --background: #f8faf7; --foreground: #14201e; }
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--foreground); font-family: Arial, sans-serif; }
+::selection { background: #d5f15c; color: #14201e; }
+.display { letter-spacing: -0.065em; line-height: .94; }
+.eyebrow { letter-spacing: .12em; text-transform: uppercase; font-size: 11px; font-weight: 700; }
+.grid-lines { background-image: linear-gradient(to right, rgba(20,32,30,.055) 1px, transparent 1px); background-size: 25% 100%; }
+@media (max-width: 640px) { .grid-lines { background-size: 50% 100%; } }
