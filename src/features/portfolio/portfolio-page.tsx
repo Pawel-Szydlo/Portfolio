@@ -5,6 +5,7 @@ import { siteConfig } from "@/shared/config/site";
 import { faqs, processSteps, projects, services, technologies } from "./data";
 import { ProjectVisual } from "./project-visual";
 import { TechnologyBadge } from "./technology-badge";
+import { CalendlyWidget } from "./calendly-widget";
 
 function SectionLabel({ children }: { children: React.ReactNode }) { return <p className="eyebrow text-muted">{children}</p>; }
 
@@ -18,5 +19,5 @@ export function PortfolioPage() {
     <section id="faq" className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-28"><div className="grid gap-12 lg:grid-cols-[1fr_2fr]"><div><SectionLabel>FAQ</SectionLabel><h2 className="display mt-5 max-w-sm text-5xl font-semibold md:text-6xl">A few useful answers.</h2></div><div className="divide-y divide-line border-y border-line">{faqs.map((faq) => <details key={faq.question} className="group py-6"><summary className="flex cursor-pointer list-none items-center justify-between gap-6 text-lg font-semibold marker:content-none"><span>{faq.question}</span><span className="text-2xl font-light text-muted transition-transform group-open:rotate-45">+</span></summary><p className="mt-4 max-w-2xl leading-relaxed text-muted">{faq.answer}</p></details>)}</div></div></section>
     <section id="contact" className="mx-auto max-w-7xl px-6 py-20 lg:px-10 lg:py-32"><div className="rounded-3xl bg-accent p-8 md:p-14 lg:p-20"><div className="flex max-w-4xl flex-col justify-between gap-12 md:flex-row md:items-end"><div><div className="mb-8 flex items-center gap-3"><Sparkles size={18} /><span className="eyebrow">Have a good problem?</span></div><h2 className="display max-w-3xl text-5xl font-semibold md:text-8xl">Let&apos;s make it<br />useful.</h2></div><div className="max-w-xs"><p className="mb-6 leading-relaxed">Tell me what you&apos;re building, where you&apos;re stuck, or what could work better.</p><Button asChild variant="default" size="lg"><a href={`mailto:${siteConfig.email}?subject=Project%20enquiry&body=Hi%20Pawel%2C%0A%0AI%27d%20like%20to%20talk%20about...`}>Tell me about the project <ArrowUpRight size={17} /></a></Button><a href={siteConfig.calendly} target="_blank" rel="noreferrer" className="mt-5 inline-block text-sm font-medium underline underline-offset-8">Or book a short call ↗</a></div></div></div></section>
     <footer className="mx-auto flex max-w-7xl flex-col gap-6 border-t border-line px-6 py-8 text-sm text-muted md:flex-row md:items-center md:justify-between lg:px-10"><p>© {new Date().getFullYear()} Pawel Szydlo</p><div className="flex items-center gap-5"><a href={siteConfig.linkedin} target="_blank" rel="noreferrer" aria-label="LinkedIn"><Linkedin size={17} /></a><a href={siteConfig.github} target="_blank" rel="noreferrer" aria-label="GitHub"><Github size={17} /></a><a href={`mailto:${siteConfig.email}`} aria-label="Email"><Mail size={17} /></a></div><p>React · TypeScript · Product thinking</p></footer>
-  </main>;
+    <CalendlyWidget /></main>;
 }

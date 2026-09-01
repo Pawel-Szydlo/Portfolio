@@ -10,7 +10,7 @@ export const SITE_CONSTANTS = {
   email: "pawel.szydlo.99@gmail.com",
   linkedin: "https://www.linkedin.com/in/pawelszydlo",
   github: "https://github.com/Pawel-Szydlo",
-  calendly: "https://calendly.com/your-link",
+  calendly: "https://calendly.com/pawel_szydlo_senior_engineer",
   cvPath: "/Pawel_Szydlo_CV_Senior_Frontend_Engineer.pdf",
 } as const;
 
