@@ -16,19 +16,22 @@ export const SITE_CONSTANTS = {
 
 export const PROJECT_MEDIA: Record<Project["slug"], { src: string; alt: string; label: string }[]> = {
   "nightly-extension": [
-    { src: "", alt: "Nightly Extension wallet overview", label: "Wallet overview" },
-    { src: "", alt: "Nightly Extension transaction flow", label: "Transaction flow" },
-    { src: "", alt: "Nightly Extension asset management", label: "Asset management" },
+    { src: "/images/projects/nightly-extension-unlock.png", alt: "Nightly Extension unlock screen", label: "Secure unlock" },
+    { src: "/images/projects/nightly-extension-dashboard.png", alt: "Nightly Extension wallet dashboard", label: "Wallet dashboard" },
+    { src: "/images/projects/nightly-extension-swap.png", alt: "Nightly Extension token swap screen", label: "Swap integration" },
+    { src: "/images/projects/nightly-extension-wallets.png", alt: "Nightly Extension wallet management screen", label: "Wallet management" },
   ],
   "nightly-mobile": [
-    { src: "", alt: "Nightly Mobile wallet overview", label: "Mobile overview" },
-    { src: "", alt: "Nightly Mobile account flow", label: "Account flow" },
-    { src: "", alt: "Nightly Mobile transaction screen", label: "Transactions" },
+    { src: "/images/projects/nightly-mobile-onboarding.png", alt: "Nightly Mobile onboarding screen", label: "Onboarding" },
+    { src: "/images/projects/nightly-mobile-dashboard.png", alt: "Nightly Mobile wallet dashboard", label: "Wallet dashboard" },
+    { src: "/images/projects/nightly-mobile-swap.png", alt: "Nightly Mobile token swap screen", label: "Swap flow" },
+    { src: "/images/projects/nightly-mobile-wallets.png", alt: "Nightly Mobile wallet selection screen", label: "Wallet selection" },
   ],
   synthify: [
-    { src: "", alt: "Synthify product overview", label: "Product overview" },
-    { src: "", alt: "Synthify borrowing flow", label: "Borrowing flow" },
-    { src: "", alt: "Synthify leverage interaction", label: "Leverage interaction" },
+    { src: "/images/projects/synthify-staking.png", alt: "Synthify staking dashboard", label: "Staking" },
+    { src: "/images/projects/synthify-exchange.png", alt: "Synthify exchange interface", label: "Exchange" },
+    { src: "/images/projects/synthify-vaults.png", alt: "Synthify vaults interface", label: "Vaults" },
+    { src: "/images/projects/synthify-statistics.png", alt: "Synthify statistics dashboard", label: "Statistics" },
   ],
 };
 
